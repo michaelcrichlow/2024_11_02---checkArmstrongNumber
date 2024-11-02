@@ -13,7 +13,7 @@ main :: proc() {
 
 
 checkArmstrongNumber :: proc(n: int) -> bool {
-	// creatioin of a string allocates memory, so you have to delete() it later
+	// creation of a string allocates memory, so you have to delete() it later
 	n_as_string := str(n)
 	defer delete(n_as_string)
 
